@@ -13,10 +13,14 @@ const img = document.querySelector("#profile img")
 
 if (html.classList.contains("light")) {
 img.setAttribute('src','./assets/avatar-light.png')
-img.setAttribute("alt", "Mayk de ocúlos escuros")
+img.setAttribute(
+  "alt", "Foto de Mayk Brito sorrindo, usando óculos escuro e jaqueta preta, sem barba e fundo azul."
+)
   } else {
    img.setAttribute('src', './assets/avatar.png')
-   img.setAttribute("alt", "alt")
+   img.setAttribute(
+     "alt", "Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba cavanhaque e fundo amarelo."
+   )
   }
   
 }

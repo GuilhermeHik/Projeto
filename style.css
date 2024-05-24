@@ -35,6 +35,10 @@ body {
   height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 #container {
   width: 100%;
   max-width: 588px;
