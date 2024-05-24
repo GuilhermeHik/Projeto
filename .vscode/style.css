@@ -12,9 +12,9 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
-}  
+}
 
-  .light {
+.light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
@@ -29,9 +29,10 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;*/
-/* Atalho para funções variadas que podem ser resumidas a cor, imagem e assim por diante.*/
+  /* Atalho para funções variadas que podem ser resumidas a cor, imagem e assim por diante.*/
 
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 #container {
@@ -53,7 +54,7 @@ body * {
 }
 
 #profile img {
- width: 112px;
+  width: 112px;
 }
 
 #profile p {
@@ -83,7 +84,7 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
 }
@@ -97,7 +98,6 @@ body * {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
-
 }
 
 /*Links*/
@@ -111,7 +111,6 @@ ul {
   padding: 24px 0;
 }
 
-
 ul li a {
   display: flex;
   align-items: center;
@@ -119,29 +118,28 @@ ul li a {
 
   padding: 16px 24px;
 
-   background: var(--surface-color);
+  background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
-  
+
   border-radius: 8px;
   backdrop-filter: blur(4px);
-   -webkit-backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
-   text-decoration: none;
-   font-weight: 500;
+  text-decoration: none;
+  font-weight: 500;
 
-   transition: background 0.2s;
+  transition: background 0.2s;
 }
 
 /* Pseudo selector*/
 
 ul li a:hover {
-   background: var(--surface-color-hover);
+  background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
-
 }
 
-#social-links{
+#social-links {
   display: flex;
   justify-content: center;
   padding: 24px 0px;
@@ -159,11 +157,21 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-   background: var(--highlight-color);
+  background: var(--highlight-color);
 }
 
 footer {
   padding: 24px 0px;
   text-align: center;
   font-size: 14px;
+}
+/* Media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
