@@ -37,6 +37,8 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
+    background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 #container {
