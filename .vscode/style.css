@@ -33,6 +33,12 @@ body {
 
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
+  overflow: hidden;
+  background-color: purple;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #container {
@@ -46,6 +52,7 @@ body * {
   font-family: "inter", sans-serif;
   color: var(--text-color);
 }
+
 
 /*profile*/
 #profile {
